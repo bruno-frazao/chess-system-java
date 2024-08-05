@@ -29,11 +29,19 @@ public class ChessMatch {
 	}
 	
 	
-	private void initialSetup() {	
-		placeNewPiece('b', 6, new Rook(board, Color.White));
-		placeNewPiece('e', 8, new King(board, Color.Black));
-		placeNewPiece('e', 1, new King(board, Color.White));
-				
-	}
+	private void initialSetup() {
+		placeNewPiece('c', 1, new Rook(board, Color.White));
+        placeNewPiece('c', 2, new Rook(board, Color.White));
+        placeNewPiece('d', 2, new Rook(board, Color.White));
+        placeNewPiece('e', 2, new Rook(board, Color.White));
+        placeNewPiece('e', 1, new Rook(board, Color.White));
+        placeNewPiece('d', 1, new King(board, Color.White));
 
+        placeNewPiece('c', 7, new Rook(board, Color.Black));
+        placeNewPiece('c', 8, new Rook(board, Color.Black));
+        placeNewPiece('d', 7, new Rook(board, Color.Black));
+        placeNewPiece('e', 7, new Rook(board, Color.Black));
+        placeNewPiece('e', 8, new Rook(board, Color.Black));
+        placeNewPiece('d', 8, new King(board, Color.Black));
+	}
 }

@@ -19,7 +19,6 @@ public class ChessPosition {
 
 	
 	
-
 	public char getColumn() {
 		return column;
 	}
