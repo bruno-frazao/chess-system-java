@@ -31,8 +31,7 @@ public class ChessMatch {
 		validateSourcePosition(position);
 		return board.piece(position).possibleMoves();
 	}
-	
-	
+
 	
 	
 	public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPosition targetPosition) {
@@ -41,7 +40,7 @@ public class ChessMatch {
 		validateSourcePosition(source);
 		validateTargetPosition(source, target);
 		Piece capturedPiece = makeMove(source, target);
-		return  (ChessPiece) capturedPiece;
+		return (ChessPiece) capturedPiece;
 		}
 	
 	private Piece makeMove(Position source, Position target) {
