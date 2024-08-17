@@ -79,8 +79,6 @@ public class Board {
 			throw new BoardException("Position not on the board");
 		}
 		return piece(position) != null;
-	} 
-	
-	
+	} 	
 	
 }
